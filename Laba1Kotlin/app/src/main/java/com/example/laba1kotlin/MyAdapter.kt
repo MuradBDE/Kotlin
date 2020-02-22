@@ -23,7 +23,7 @@ class MyAdapter(val items : ArrayList<Int>, val context: Context) : RecyclerView
         return ViewHolder(LayoutInflater.from(context).inflate(R.layout.layour_elements, parent, false))
 
     }
-
+    // Прогрузка элементов в адаптере
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         if (items.get(position) % 2 == 1)
         {
